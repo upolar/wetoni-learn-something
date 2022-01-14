@@ -10,4 +10,4 @@ For usage, methods, references and more please [read the docs](https://docs.tele
 ---
 | Name			                         | Short Description                                     | 
 |----------------------------------------|-------------------------------------------------------| 
-| [Animations]()                         | Some animations made with `edit_message()` |
+| [Animations](animations/)                         | Some animations made with `edit_message()` |
