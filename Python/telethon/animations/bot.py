@@ -2,16 +2,31 @@
 import asyncio
 
 from telethon import TelegramClient, events
+from trashguy import TrashGuy
 
 from utils import *
 
 api_id = 'INSERT API ID HERE'
 api_hash = 'INSERT API HASH HERE'
 
-client = TelegramClient('client', api_id, api_hash)
+client = TelegramClient('polar', api_id, api_hash)
 
+# Trash Dance
+@client.on(events.NewMessage(outgoing=True, pattern='!d .*'))
+async def trash_dance(event):
+    m = await event.respond('dance')
+
+    dance_msg = (event.message.message).split('!d ')
+
+    animation = TrashGuy(dance_msg[1])
+
+    await asyncio.sleep(2)
+    for frame in animation:
+        await client.edit_message(m, frame)
+
+# Rabbit 
 @client.on(events.NewMessage(pattern='!b.*'))
-async def cueio(event):
+async def rabbit_message(event):
     msg = (event.message.message).split('!b ')
     await event.delete()
     if len(msg) == 1:
