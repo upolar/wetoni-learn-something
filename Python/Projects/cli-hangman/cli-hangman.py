@@ -4,7 +4,7 @@ from os import system
 from random import choice
 from unidecode import unidecode
 
-from aula_38_palavras import palavras
+from palavras import palavras
 
 digitadas = []
 erros = 0
