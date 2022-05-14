@@ -4,11 +4,7 @@ from os import system
 from random import choice
 from unidecode import unidecode
 
-<<<<<<<< HEAD:Python/Projects/cli-hangman/cli-hangman.py
 from palavras import palavras
-========
-from aula_38_palavras import palavras
->>>>>>>> bcf5b69bc4a5e966a8fbb4cb43b57810b8dcbd6f:Python/course/exercicios/exercicio_aula_38.py
 
 digitadas = []
 erros = 0
