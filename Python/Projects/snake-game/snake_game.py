@@ -1,12 +1,17 @@
-import sys, pygame
+import sys
 
+from random import randint
+
+import pygame
 from pygame import K_UP, K_RIGHT, K_LEFT, K_DOWN
-
 from colors import Color
 
 pygame.init()
 
-screen = pygame.display.set_mode((800, 600))
+height = 800
+width = 600
+
+screen = pygame.display.set_mode((height, width))
 pygame.display.set_caption('Snake-game')
 direction = K_RIGHT 
 game_over = False
@@ -15,15 +20,28 @@ clock = pygame.time.Clock()
 
 body = list()
 
+steps = 10 
 def switch(old, new):
     old[0] = new[0]
     old[1] = new[1]
 
+def rand_x():
+    global steps
+    global height
+    x_ = randint(0, height)
+    return x_ - (x_ % steps)
+
+def rand_y():
+    global steps
+    global width
+    y_ = randint(0, width)
+    return y_ - (y_ % steps)
+
 def move_snake(key_pressed = None):
     global snake_head
     global body
-    
-    steps = 10
+    global steps
+
     if body:
         tam_corpo = len(body)
         if tam_corpo >= 2:
@@ -49,7 +67,7 @@ def move_snake(key_pressed = None):
 
 allowed_keys = [K_UP, K_RIGHT, K_LEFT, K_DOWN]
 
-fruit = pygame.draw.rect(screen, Color.fruit_melon, (500, 300, 10, 10))
+fruit = pygame.draw.rect(screen, Color.fruit_melon, (rand_x(), rand_y(), 10, 10))
 snake_head = pygame.draw.rect(screen, Color.head, (400, 300, 10, 10))
 
 while not game_over:
@@ -86,7 +104,8 @@ while not game_over:
             body.append(tail.move(-11, 0))
 
         tail = body[-1]
-        fruit = fruit.move(30, 0)
+        fruit.x = rand_x()
+        fruit.y = rand_y()
 
     snake_head = pygame.draw.rect(screen, Color.head, snake_head)
     fruit = pygame.draw.rect(screen, Color.fruit_melon, fruit)
