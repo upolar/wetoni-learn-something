@@ -13,12 +13,12 @@ from game_settings import (
     steps
 )
 
-
 pygame.init()
 
 screen = pygame.display.set_mode((height, width))
 pygame.display.set_caption('Snake-game')
 game_over = False
+entire_body = []
 
 clock = pygame.time.Clock()
 
@@ -36,7 +36,7 @@ def rand_y():
     y_ = randint(0, width)
     return y_ - (y_ % steps)
 
-def move_snake(key_pressed = None):
+def move_snake(key_pressed):
     global snake_head
     global body
     global steps
@@ -67,6 +67,12 @@ def move_snake(key_pressed = None):
 fruit = pygame.draw.rect(screen, Color.fruit_melon, (rand_x(), rand_y(), 10, 10))
 snake_head = pygame.draw.rect(screen, Color.head, (400, 300, 10, 10))
 
+first_block_body = snake_head.move(-11, 0)
+body.append(first_block_body)
+
+entire_body.append(snake_head)
+entire_body.append(first_block_body)
+
 while not game_over:
     for event in pygame.event.get():
         if (event.type == pygame.QUIT): 
@@ -78,6 +84,17 @@ while not game_over:
                 start_direction = pressed_key
 
     move_snake(start_direction)
+
+    # Verifica se houve colisão da cabeça ou corpo com a fruta 
+    if len(fruit.collidelistall(entire_body)) > 0:
+        tail = body[-1].copy()
+        move_snake(start_direction)
+        body.append(tail)
+        entire_body.append(tail)        
+       
+        fruit.x = rand_x()
+        fruit.y = rand_y()
+
 
     # Verifica se não encostou/ultrapassou o limite da tela
     if snake_head.x < 0 or snake_head.y < 0 or snake_head.x >= 800 or snake_head.y >= 600:
@@ -92,17 +109,6 @@ while not game_over:
         # desenha todos os componentes do corpo
         for i in body:
             pygame.draw.rect(screen, Color.body, i)
-
-    # Verifica se houve colisão da cabeça com a fruta 
-    if (fruit.colliderect(snake_head)):
-        if not body:
-            body.append(snake_head.move(-11, 0))
-        else:
-            body.append(tail.move(-11, 0))
-
-        tail = body[-1]
-        fruit.x = rand_x()
-        fruit.y = rand_y()
 
     snake_head = pygame.draw.rect(screen, Color.head, snake_head)
     fruit = pygame.draw.rect(screen, Color.fruit_melon, fruit)
