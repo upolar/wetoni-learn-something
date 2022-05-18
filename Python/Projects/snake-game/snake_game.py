@@ -3,37 +3,36 @@ import sys
 from random import randint
 
 import pygame
-from pygame import K_UP, K_RIGHT, K_LEFT, K_DOWN
+
 from colors import Color
+from game_settings import (
+    height,
+    width,
+    allowed_keys,
+    start_direction,
+    steps
+)
+
 
 pygame.init()
 
-height = 800
-width = 600
-
 screen = pygame.display.set_mode((height, width))
 pygame.display.set_caption('Snake-game')
-direction = K_RIGHT 
 game_over = False
 
 clock = pygame.time.Clock()
 
 body = list()
 
-steps = 10 
 def switch(old, new):
     old[0] = new[0]
     old[1] = new[1]
 
 def rand_x():
-    global steps
-    global height
-    x_ = randint(0, height)
+    x_ = randint(0, height) 
     return x_ - (x_ % steps)
 
 def rand_y():
-    global steps
-    global width
     y_ = randint(0, width)
     return y_ - (y_ % steps)
 
@@ -56,16 +55,14 @@ def move_snake(key_pressed = None):
 
         switch(body[0], snake_head)
 
-    if key_pressed == K_UP:
+    if key_pressed == pygame.K_UP:
         snake_head[1] -= steps
-    elif key_pressed == K_DOWN:
+    elif key_pressed == pygame.K_DOWN:
         snake_head[1] += steps
-    elif key_pressed == K_LEFT:
+    elif key_pressed == pygame.K_LEFT:
         snake_head[0] -= steps
-    elif key_pressed == K_RIGHT:
+    elif key_pressed == pygame.K_RIGHT:
         snake_head[0] += steps
-
-allowed_keys = [K_UP, K_RIGHT, K_LEFT, K_DOWN]
 
 fruit = pygame.draw.rect(screen, Color.fruit_melon, (rand_x(), rand_y(), 10, 10))
 snake_head = pygame.draw.rect(screen, Color.head, (400, 300, 10, 10))
@@ -78,9 +75,9 @@ while not game_over:
             pressed_key = event.key 
             if (pressed_key in allowed_keys):
                 move_snake(pressed_key)
-                direction = pressed_key
+                start_direction = pressed_key
 
-    move_snake(direction)
+    move_snake(start_direction)
 
     # Verifica se não encostou/ultrapassou o limite da tela
     if snake_head.x < 0 or snake_head.y < 0 or snake_head.x >= 800 or snake_head.y >= 600:
