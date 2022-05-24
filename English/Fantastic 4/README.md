@@ -13,6 +13,6 @@ Este repositório é destinado as minhas anotações, transcrições e etc.
 
 | WEEK |    TITLE                |   SITE    | BEGIN    |     END  |
 | ---- |        ----             |   ----    | ----     |     ---- |
-|   1  | Inventing Languages     |   BBC     | 23.05.22 | 27.05.22 |
+|   1  | [Inventing Languages](week1-Inventing_Languages.md)    |   BBC     | 23.05.22 | 27.05.22 |
 -----------------------------------------------------------------
 
