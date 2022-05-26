@@ -1,6 +1,19 @@
 
 # Inventing Languages
 
+> New bits of English are invented as people use the language in new ways, but what happens when a language comes from an entirely different galaxy – somewhere like Qo’noS, home planet of the Klingons? Neil and Sam discuss how languages develop and teach some related vocabulary.
+
+<p align="center">
+ <a href="https://www.bbc.co.uk/learningenglish/oromo/features/6-minute-english_2022/ep-220113">
+  <img src="https://img.shields.io/badge/LISTEN TO PODCAST-2962FF?style=for-the-badge"/>
+ </a>
+</p>
+
+
+
+
+### Transcrição
+
 > :woman: **Sam**: Hello, this is 6 minutes English from BBC Learning English.
 I'm Sam.
 
