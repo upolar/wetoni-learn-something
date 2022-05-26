@@ -16,7 +16,8 @@ I'm fine not.
 
 > :man: **Neil**: ahh, Sam is speaking English. 
 Just a very modern type of English. 
-For example saying "my bad" instead of "my fault". [... accepting] she is wrong.
+For example saying "my bad" instead of "my fault".
+[... accepting] she is wrong.
 
 > :woman: **Sam**: or adding __not__ at the end of a sentence to show that 
 I really mean the opposite of [... said].
@@ -40,5 +41,25 @@ So Neil my crazy question is this:
 
 > :woman: **Sam**: In 2010 [Klingon] became the first invented language to do what? Is it:
 (a) Have [own] dictionary; 
-(b) Have a opera [...]
+(b) Have an opera [...]
 (c) Be recognize as an official language by the United Nations
+
+> :man: **Neil**: Hmmm. Every language needs vocabulary so I'll say (a) Klingon was the first inventd language to have his own dictionary
+
+> :woman: **Sam**: Okay, Neil. I'll reveal the answer later on the program. Klingon isn't the only madeup language invented for the movies [... a language used on fantasy TV show Game of Thrones].
+
+> :man: **Neil**: From his home in Los Angeles David spoke to [Mike Rousel present of BBC radio for program ....]. They discuss [...] in the twelve century.
+
+> 👷‍♂️ **David**: What we had is an entirely [list of nouns a whole list of nouns and many of ... ]. And [she dropped in two sounds using later grammar and another later words] Isn't a language proper as we understand it now because [while] we're talking about language ins't just the vocabulary it's the grammar. Neverless we still kind of looking [...].
+
+> :woman: **Sam**: [...] invented new nouns but using [...] grammar so david doesn't think her invention is a properly language.
+Neverless things [...] languages
+
+> :man: **Neil**: [The ... to something refers to a Christian say who believe to give special help to a particular specific activity.
+Here the activity is inventing a common language, short or constructed language].
+Artificially invented languages like Klingon and [...].
+
+> :woman: **Sam**: Another famous constructed language, Esperanto, was invented in 1887 by polish doctor [...].
+He want to make it easier for people who spoke different languages to communicate with each other.
+
+> :man: **Neil**: Listen as [David ...] speaking Esperanto with [Michael ...] and testing how much he understand for BBC radio four program with [...].
