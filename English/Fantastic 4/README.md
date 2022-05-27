@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="#"><img src="https://img.shields.io/static/v1?style=for-the-badge&label=WEEK&color=red&message=1" alt="week counter"/></a>
-  <a href="#"><img src="https://img.shields.io/static/v1?style=for-the-badge&label=Streak&color=green&message=3%20days" alt="Streak counter"/></a>
+  <a href="#"><img src="https://img.shields.io/static/v1?style=for-the-badge&label=Streak&color=green&message=4%20days" alt="Streak counter"/></a>
 </p>
 
 >  O Fantastic 4 é uma ideia concebida pelo Douglas Santos para estimular o estudo de inglês em grupo. O objetivo é desenvolvermos nossas competências no Inglês por meio do estudo de podcasts.
