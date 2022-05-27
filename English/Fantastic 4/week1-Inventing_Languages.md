@@ -42,7 +42,7 @@ English is a living language.
 
 > :woman: **Sam**: new [...] in English are invented as people use the language in new ways.
 But what happens when a language comes from an entirely diffent galaxy?
-Someone like [Kronos ... of the planets of the Klingons]
+Someone like [ ... home planet of the Klingons]
 
 > :man: **Neil**: Yes! When sci-fi tv show star-trek introduce aliens caracters [... Klingons].
 The [...] is need to invent a [whole] new language, [Klingon].
@@ -59,7 +59,8 @@ So Neil my crazy question is this:
 
 > :man: **Neil**: Hmmm. Every language needs vocabulary so I'll say (a) Klingon was the first inventd language to have his own dictionary
 
-> :woman: **Sam**: Okay, Neil. I'll reveal the answer later on the program. Klingon isn't the only madeup language invented for the movies [... a language used on fantasy TV show Game of Thrones].
+> :woman: **Sam**: Okay, Neil. I'll reveal the answer later on the program. 
+> Klingon isn't the only madeup language invented for the movies [... a language used on fantasy TV show Game of Thrones].
 
 > :man: **Neil**: From his home in Los Angeles David spoke to [Mike Rousel present of BBC radio for program ....]. They discuss [...] in the twelve century.
 
@@ -76,3 +77,19 @@ Artificially invented languages like Klingon and [...].
 He want to make it easier for people who spoke different languages to communicate with each other.
 
 > :man: **Neil**: Listen as [David ...] speaking Esperanto with [Michael ...] and testing how much he understand for BBC radio four program with [...].
+
+> 👷 **David**: We're English speakers from [east] Europe and in the nineteen (meow) century [universal] meant able to understood by people from [east Europe] And so for example to say 'I speak Esperanto' - ['Mi parolas Esperanton'].
+
+> **Michael**: Yes I almost got that one. The [... bit from his latin root, me obviasly]. Try me again
+
+> **David**: [que es vi fartas]
+
+> **Michael**: Who is my father? Where are [my] traveling? No I get stuck in this one.
+
+> :woman: **Sam**: Like Spanish, Italian and other [modern] European languages, Esperanto is based on latin.
+Michael guessed the meaning of the Esperanto word 'parolas' from it's latin root. The origin also of the languages
+
+> :man: **Neil**: But the second sentence of Esperanto isn't so easy.
+Michael get stuck on that one [...] cause it's so difficult.
+
+> :woman: **Sam**: I think that I probably get stuck on that one as well [...]
